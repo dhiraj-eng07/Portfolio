@@ -33,7 +33,47 @@ function typeWriter() {
 
 // Start the typewriter effect
 setTimeout(typeWriter, 1000);
+function createCertSlides() {
+    const certs = [
+        {
+            file: 'microsoft-certificate.jpg',
+            title: 'Cloud Computing',
+            issuer: 'Microsoft'
+        },
+        {
+            file: 'google-sheets-app-certificate.pdf',
+            title: 'App Development with Google Sheets',
+            issuer: 'Coursera'
+        },
+        // Add all other certificates in this format
+    ];
 
+    const slidesContainer = document.querySelector('.cert-slides');
+    slidesContainer.innerHTML = '';
+
+    certs.forEach(cert => {
+        const slide = document.createElement('div');
+        slide.className = 'cert-slide';
+        
+        const isPDF = cert.file.endsWith('.pdf');
+        const mediaElement = isPDF 
+            ? `<embed src="${cert.file}" type="application/pdf">`
+            : `<img src="${cert.file}" alt="${cert.title}">`;
+        
+        slide.innerHTML = `
+            ${mediaElement}
+            <div class="cert-details">
+                <h3>${cert.title}</h3>
+                <p>${cert.issuer}</p>
+            </div>
+        `;
+        
+        slidesContainer.appendChild(slide);
+    });
+}
+
+// Call this function when page loads
+document.addEventListener('DOMContentLoaded', createCertSlides);
 // Certifications Carousel
 const certSlides = document.querySelector('.cert-slides');
 const certIndicators = document.querySelectorAll('.cert-indicator');
