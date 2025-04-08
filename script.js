@@ -1,35 +1,47 @@
 // Typewriter Effect
-const typewriterElement = document.querySelector('.typewriter');
-const professions = ['Computer Engineer', 'Android Developer', 'ML Enthusiast', 'Problem Solver'];
-let professionIndex = 0;
-let charIndex = 0;
+const typewriter = document.querySelector('.typewriter');
+const professions = ['Problem Solver', 'Computer Engineer', 'Developer'];
+let i = 0;
+let j = 0;
 let isDeleting = false;
-let typingSpeed = 100;
 
-function typeWriter() {
-    const currentProfession = professions[professionIndex];
+function typeEffect() {
+    const current = professions[i];
     
     if (isDeleting) {
-        typewriterElement.textContent = currentProfession.substring(0, charIndex - 1);
-        charIndex--;
-        typingSpeed = 50;
+        typewriter.textContent = current.substring(0, j-1);
+        j--;
     } else {
-        typewriterElement.textContent = currentProfession.substring(0, charIndex + 1);
-        charIndex++;
-        typingSpeed = 100;
+        typewriter.textContent = current.substring(0, j+1);
+        j++;
     }
     
-    if (!isDeleting && charIndex === currentProfession.length) {
+    if (!isDeleting && j === current.length) {
         isDeleting = true;
-        typingSpeed = 1500; // Pause at end
-    } else if (isDeleting && charIndex === 0) {
+        setTimeout(typeEffect, 1000);
+    } else if (isDeleting && j === 0) {
         isDeleting = false;
-        professionIndex = (professionIndex + 1) % professions.length;
-        typingSpeed = 500; // Pause before typing next
+        i = (i + 1) % professions.length;
+        setTimeout(typeEffect, 500);
+    } else {
+        setTimeout(typeEffect, isDeleting ? 50 : 100);
     }
-    
-    setTimeout(typeWriter, typingSpeed);
 }
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    typeEffect();
+    
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
 
 // Start the typewriter effect
 setTimeout(typeWriter, 1000);
