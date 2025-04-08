@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeraj Patgar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Deeraj</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="typewriter"></span></h1>
+            <p>Computer Engineer | ML & Cybersecurity Enthusiast | Problem Solver</p>
+            <button class="hero-btn" onclick="location.href='#projects'">View My Work ↓</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="profile-container">
+            <img src="image.png" alt="Deeraj Patgar" style="object-position: center top;">
+    </div>
+        <div class="about-content">
+            <h2>🌟 About Me</h2>
+            <p>Innovative Computer Engineer | ML & Cybersecurity Enthusiast | Problem Solver by Passion</p>
+            <p>I'm a passionate Computer Engineer from Pune with a strong academic track record (92.46% Diploma, 9.5 CGPA in B.E.), driven by curiosity and creativity in the tech space. From developing secure backend systems to exploring the power of AI and machine learning, I turn complex problems into simple, smart solutions.</p>
+            <p>Whether it's building Python tools like WiFi-Slax, creating intelligent apps, or optimizing algorithms in C++, I love crafting technologies that make a real-world impact. With recognized achievements in coding competitions and hands-on experience in cybersecurity, I'm on a mission to transform ideas into intelligent digital experiences.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2><i class="fas fa-shuriken"></i> 忍術 Ninja Skills</h2>
+            
+            <div class="skills-category">
+                <h3><i class="fas fa-code"></i> Programming Jutsu</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Python">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="C++">
+                        <i class="fas fa-copyright"></i>
+                        <span>C++</span>
+                        <div class="skill-level" style="width: 92%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Java">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                        <div class="skill-level" style="width: 88%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="HTML/CSS">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML/CSS</span>
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="JavaScript">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="SQL">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                        <div class="skill-level" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Android">
+                        <i class="fab fa-android"></i>
+                        <span>Android</span>
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Firebase">
+                        <i class="fas fa-fire"></i>
+                        <span>Firebase</span>
+                        <div class="skill-level" style="width: 82%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3><i class="fas fa-brain"></i> AI/ML</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Machine Learning">
+                        <i class="fas fa-robot"></i>
+                        <span>Machine Learning</span>
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Scikit-learn">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Scikit-learn</span>
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Pandas">
+                        <i class="fas fa-table"></i>
+                        <span>Pandas</span>
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Git">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                        <div class="skill-level" style="width: 88%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="VS Code">
+                        <i class="fas fa-code"></i>
+                        <span>VS Code</span>
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Jupyter">
+                        <i class="fas fa-book"></i>
+                        <span>Jupyter Notebook</span>
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3><i class="fas fa-bullseye"></i> Focus Areas</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Data Science">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Data Science</span>
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Machine Learning">
+                        <i class="fas fa-brain"></i>
+                        <span>Machine Learning</span>
+                        <div class="skill-level" style="width: 87%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Full Stack">
+                        <i class="fas fa-layer-group"></i>
+                        <span>Full Stack Web Dev</span>
+                        <div class="skill-level" style="width: 83%"></div>
+                    </div>
+                    <div class="skill-item" data-skill="Cybersecurity">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Cybersecurity</span>
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Ninja Projects</h2>
+        <p>My stealthy creations that solve real-world problems</p>
+        
+        <div class="project-grid">
+            <div class="project-card animate delay-1" onclick="window.open('https://github.com/yourusername/snake-game', '_blank')">
+                <h3>Snake Game</h3>
+                <p>Developed a classic Snake game in C++ with advanced features including dynamic tail growth, real-time input handling, and smooth rendering using a text-based interface.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/snake-game" target="_blank">View Code <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card animate delay-2" onclick="window.open('https://github.com/yourusername/college-cruize', '_blank')">
+                <h3>College Cruize</h3>
+                <p>Developed a robust Uber-like Android application enabling real-time ride-hailing with GPS tracking and seamless user interface for enhanced customer experience.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/college-cruize" target="_blank">View Code <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card animate delay-3" onclick="window.open('https://github.com/yourusername/complaint-system', '_blank')">
+                <h3>Complaint Management System</h3>
+                <p>Ensure customer delight through end-to-end management of complaints from in-take to assessing risks, regulatory impact and submissions, quality investigation, resolution, and continuous improvement.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/complaint-system" target="_blank">View Code <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card animate delay-4" onclick="window.open('https://github.com/yourusername/dine-buddy', '_blank')">
+                <h3>Dine Buddy</h3>
+                <p>Restaurant recommendation system that suggests perfect dining spots based on your preferences, location, and budget.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/dine-buddy" target="_blank">View Code <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card animate delay-5" onclick="window.open('https://github.com/yourusername/quiz-app', '_blank')">
+                <h3>Quiz App</h3>
+                <p>Designed and developed an interactive Quiz app using JavaScript, incorporating features such as multiple-choice questions, real-time score updates, and a responsive user interface.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/quiz-app" target="_blank">View Code <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2>Ninja Certifications</h2>
+        <p>Proof of my training in the digital arts</p>
+        
+        <div class="cert-carousel">
+            <div class="cert-slides">
+                <div class="cert-slide">
+                    <img src="https://via.placeholder.com/800x500/112240/64FFDA?text=Walmart+Advance+Software+Engineering" alt="Walmart Certification">
+                </div>
+                <div class="cert-slide">
+                    <img src="https://via.placeholder.com/800x500/112240/64FFDA?text=JP+Morgan+Software+Engineering" alt="JP Morgan Certification">
+                </div>
+                <div class="cert-slide">
+                    <img src="https://via.placeholder.com/800x500/112240/64FFDA?text=Cyber+Security+Internship" alt="Cyber Security Certification">
+                </div>
+                <div class="cert-slide">
+                    <img src="https://via.placeholder.com/800x500/112240/64FFDA?text=Android+Development" alt="Android Development Certification">
+                </div>
+            </div>
+            
+            <div class="cert-controls">
+                <button class="cert-control" id="prev-cert"><i class="fas fa-chevron-left"></i></button>
+                <button class="cert-control" id="next-cert"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="cert-indicators">
+                <span class="cert-indicator active"></span>
+                <span class="cert-indicator"></span>
+                <span class="cert-indicator"></span>
+                <span class="cert-indicator"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Send a Ninja Scroll</h2>
+        <p>Currently seeking opportunities that challenge my abilities and allow me to contribute effectively to dynamic tech teams.</p>
+        
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:dhirajpatgar3@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>© 2024 Deeraj Patgar. All rights reserved.</p>
+        <p>+91-9049213699 | Pune | dhirajpatgar3@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
