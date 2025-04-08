@@ -75,6 +75,32 @@ nav {
 .nav-links a:hover::after {
     width: 100%;
 }
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: #0A192F;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
 
 /* Hero Section */
 .hero {
